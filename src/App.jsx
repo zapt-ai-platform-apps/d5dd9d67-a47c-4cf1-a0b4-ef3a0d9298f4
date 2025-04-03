@@ -1,9 +1,13 @@
 import React from 'react';
+import AppProviders from '@/app/providers/AppProviders';
+import Router from '@/app/routes';
 
-export default function App(){
-    return (
-        <div className="min-h-screen">
-            App Template
-        </div>
-    )
+function App() {
+  return (
+    <AppProviders>
+      <Router />
+    </AppProviders>
+  );
 }
+
+export default App;
